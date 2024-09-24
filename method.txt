@@ -1,0 +1,10 @@
+python3 -m venv venv
+source venv/bin/activate
+pip install fastapi
+pip install uvicorn
+pip install tortoise-orm
+pip install passlib[bcrypt]
+
+to run
+uvicorn main:app --reload
+
