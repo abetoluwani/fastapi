@@ -16,7 +16,7 @@ async def register(user: user_pydanticIn):
     new_user = await user_pydantic.from_tortoise_orm(user_obj)
     return {
         'status': 'success',
-        "data" : f"Hello {new_user.username}, Please check your email and click on the link to confirm your email.",
+        "data" : f"Hello {new_user.username}, Please check  your email and click on the link to confirm your email.",
     }
 
 
